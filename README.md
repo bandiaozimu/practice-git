@@ -105,12 +105,12 @@ brew install coreutils
 
 1. 本腳本利用wunderlist作為清單和推播介面，請註冊兩個帳號，一發一收。發送端要登入以下網址申請開發者帳號，並建立App：
 
-[https://developer.wunderlist.com/apps](https://developer.wunderlist.com/apps)
+   [https://developer.wunderlist.com/apps](https://developer.wunderlist.com/apps)
 
-建立App時會要求填入app url和callback url，隨便填即可。建好後可拿到client id，
-再點右下角的「CREATE ACCESS TOKEN」按鈕可再得到一組access token，記下這兩組號碼，於下個步驟填入`DJVoiceConfig.pm`。
+   建立App時會要求填入app url和callback url，隨便填即可。建好後可拿到client id，
+   再點右下角的「CREATE ACCESS TOKEN」按鈕可再得到一組access token，記下這兩組號碼，於下個步驟填入`DJVoiceConfig.pm`。
 
-![Image of Yaktocat](http://i.imgur.com/TW3IH8P.png)
+   ![Image of Yaktocat](http://i.imgur.com/TW3IH8P.png)
 
 2. 編輯`DJVoiceConfig.pm` 修改以下參數：
 
