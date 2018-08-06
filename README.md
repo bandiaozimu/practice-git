@@ -129,10 +129,10 @@ brew install coreutils
 4. 兩個清單分別為： ダウンロード(下載)，オススメ作品(推薦作品)，「ダウンロード」會在主機端處理新作品時用到；
 「オススメ作品」 則會在客戶端的iTunes匯入作品時使用。
 
-往後如果想設計自己的推薦清單，可以先修改 `@RECOMMEND\_CRITERIA\_ARRAY`，再運行此指令，運行過程中`setup -w` 會
+- 注1：往後如果想設計自己的推薦清單，可以先修改 `@RECOMMEND\_CRITERIA\_ARRAY`，再運行此指令，運行過程中`setup -w` 會
 檢查 query 的語法，沒問題才新增待辦事項(task)。
 
-- 注：只要 `$POP\_DATABASE\_PATH` 正確， `setup -w` 不論在主機端還是客戶端都能運行。
+- 注2：只要 `$POP\_DATABASE\_PATH` 正確， `setup -w` 不論在主機端還是客戶端都能運行。
 
 
 安裝客戶端程式
@@ -163,7 +163,7 @@ brew install coreutils
     \./reflashRecommendList
     ```
 
-可修改`DJVoiceConfig.pm` 的`$COLUMN\_OF\_RECOMMEND\_LIST` 參數，增加清單長度。
+- 注：可修改`DJVoiceConfig.pm` 的`$COLUMN\_OF\_RECOMMEND\_LIST` 參數，增加清單長度。
 
 
 運行客戶端程式
@@ -216,9 +216,9 @@ brew install coreutils
     %NOTIFY\_CRITERIA\_HASH\_CIRCLE
     ```
 
-新作品的推播篩選，是根據發行社團，屬性標籤，聲優決定的。三者決定一個閥值，當下載數大於閥值則發
-送推播通知。
-計算閥值規則如下：
+   新作品的推播篩選，是根據發行社團，屬性標籤，聲優決定的。三者決定一個閥值，當下載數大於閥值則發
+   送推播通知。
+   計算閥值規則如下：
 
        缺省值(DEFAULT) ------------\
        喜好的屬性標籤(PASS_TAG) ---取最小值----
