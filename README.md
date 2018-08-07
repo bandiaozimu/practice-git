@@ -1,5 +1,14 @@
 
+![Image of Yaktocat](https://i.imgur.com/TtYjVo8.jpg)
+![Image of Yaktocat](https://i.imgur.com/P2YcA5Z.jpg)
 #同人音声资料库系统
+之前我承諾會發一個同人音聲腳本的帖，現在來填坑。會寫這個程式是因為爬蟲腳本每天都爬下1~10GB不等的作品，跟本沒法都聽完，想去蕪存菁。
+簡單介紹這程式的作用，就是網站爬蟲，下載，統一命名，選妃，轉檔，加封面，加Tag，匯入iTunes，建立播放清單都全自動化的一條龍服務。
+
+在看這帖之前，先聲明：如果你的系統不是OSX，完全不會shell script，甚至沒用過command line，請坐車離開。
+31b7ed5ef3e50ddc0c365a45534b4c3c9b9a1322
+
+如果沒被嚇走，就去GitHub
 
 功能
 -----------------------
